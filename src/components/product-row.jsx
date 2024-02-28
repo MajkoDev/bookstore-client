@@ -3,7 +3,7 @@ import useFetch from "@/hooks/useFetch";
 
 export default function ProductRow({ title, type }) {
   const { data, loading, error } = useFetch(
-    `http://localhost:1337/api/products?populate=*&[filters][type][$eq]=${type}`
+    `api/products?populate=*&[filters][type][$eq]=${type}`
   );
 
   return (
