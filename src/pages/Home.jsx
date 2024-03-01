@@ -7,7 +7,7 @@ import ProductRow from "@/components/product-row";
 
 const HomePage = () => {
   const { data: categories } = useFetch(
-    `http://localhost:1337/api/categories?populate=*`
+    `api/categories?populate=*`
   );
 
   return (
